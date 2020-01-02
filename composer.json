@@ -1,0 +1,32 @@
+{
+    "name": "bingalls/quoteql",
+    "description": "Simple api using graphql",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruce Ingalls",
+            "email": "bruce.ingalls@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "require": {
+        "webonyx/graphql-php": "~v0.13"
+    },
+    "require-dev": {
+        "edsonmedina/php_testability": "dev-master",
+        "phpunit/phpunit": "~8.4",
+        "phpstan/phpstan": "~0.11",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "~3.5"
+    }
+}

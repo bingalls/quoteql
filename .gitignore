@@ -1,0 +1,10 @@
+# Composer
+composer.phar
+/vendor/
+
+# Quote-specific stuff
+.idea/
+
+# Testing
+report
+.phpunit.result.cache
