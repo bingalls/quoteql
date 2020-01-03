@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bed92356bbedb0ea939cf705ce1f51a2",
+    "content-hash": "7ba06119e9a06a9f634b2c7e8f8bf82b",
     "packages": [
         {
             "name": "webonyx/graphql-php",
@@ -117,159 +117,6 @@
             "time": "2019-10-21T16:45:58+00:00"
         },
         {
-            "name": "edsonmedina/php_testability",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/edsonmedina/php_testability.git",
-                "reference": "d970a120be0108225db52a1dcd7b935f4888d6df"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/edsonmedina/php_testability/zipball/d970a120be0108225db52a1dcd7b935f4888d6df",
-                "reference": "d970a120be0108225db52a1dcd7b935f4888d6df",
-                "shasum": ""
-            },
-            "require": {
-                "mustache/mustache": "*",
-                "nategood/commando": "*",
-                "nikic/php-parser": "*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpspec/prophecy": "*",
-                "phpunit/phpunit": "*"
-            },
-            "bin": [
-                "src/testability"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "edsonmedina\\php_testability\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Edson Medina",
-                    "email": "edsonmedina@gmail.com"
-                }
-            ],
-            "description": "Analyses and reports testability issues of a php codebase",
-            "homepage": "https://github.com/edsonmedina/php_testability/",
-            "keywords": [
-                "TDD",
-                "php",
-                "phpunit",
-                "testability",
-                "testing",
-                "unit"
-            ],
-            "abandoned": true,
-            "time": "2017-11-01T10:41:51+00:00"
-        },
-        {
-            "name": "kevinlebrun/colors.php",
-            "version": "0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kevinlebrun/colors.php.git",
-                "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kevinlebrun/colors.php/zipball/d132f36d06e48ea080855af19b4bcb1fb615224a",
-                "reference": "d132f36d06e48ea080855af19b4bcb1fb615224a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "satooshi/php-coveralls": "dev-master",
-                "squizlabs/php_codesniffer": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Colors": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Le Brun",
-                    "email": "lebrun.k@gmail.com",
-                    "homepage": "http://kevinlebrun.fr",
-                    "role": "developer"
-                }
-            ],
-            "description": "Colors for PHP CLI scripts",
-            "homepage": "https://github.com/kevinlebrun/colors.php",
-            "keywords": [
-                "cli",
-                "color",
-                "colors",
-                "console",
-                "shell"
-            ],
-            "time": "2014-12-23T01:23:37+00:00"
-        },
-        {
-            "name": "mustache/mustache",
-            "version": "v2.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e95c5a008c23d3151d59ea72484d4f72049ab7f4",
-                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~1.11",
-                "phpunit/phpunit": "~3.7|~4.0|~5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Mustache": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Justin Hileman",
-                    "email": "justin@justinhileman.info",
-                    "homepage": "http://justinhileman.com"
-                }
-            ],
-            "description": "A Mustache implementation in PHP.",
-            "homepage": "https://github.com/bobthecow/mustache.php",
-            "keywords": [
-                "mustache",
-                "templating"
-            ],
-            "time": "2019-11-23T21:40:31+00:00"
-        },
-        {
             "name": "myclabs/deep-copy",
             "version": "1.9.4",
             "source": {
@@ -316,52 +163,6 @@
                 "object graph"
             ],
             "time": "2019-12-15T19:12:40+00:00"
-        },
-        {
-            "name": "nategood/commando",
-            "version": "0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nategood/commando.git",
-                "reference": "8fedd49fcb694faf60d87d5c2c4defdffa298fa0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nategood/commando/zipball/8fedd49fcb694faf60d87d5c2c4defdffa298fa0",
-                "reference": "8fedd49fcb694faf60d87d5c2c4defdffa298fa0",
-                "shasum": ""
-            },
-            "require": {
-                "kevinlebrun/colors.php": "~0.2",
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Commando": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nate Good",
-                    "email": "me@nategood.com"
-                }
-            ],
-            "description": "PHP CLI Commando Style",
-            "homepage": "http://github.com/nategood/commando",
-            "keywords": [
-                "automation",
-                "cli",
-                "command",
-                "command line",
-                "command line interface",
-                "scripting"
-            ],
-            "time": "2019-07-10T02:37:11+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2141,7 +1942,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "edsonmedina/php_testability": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

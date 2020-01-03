@@ -89,7 +89,6 @@ zsh's simple **/* syntax. Ask, if you need help for other shells
 * `./vendor/bin/phpunit`
 * `./vendor/bin/phpstan analyze --level=7 *.php App/**/*.php`
 * `./vendor/bin/phpcs --standard=PSR12 *.php App/**/*.php`
-* `./vendor/bin/testability . -x vendor,tests && open report/index.html`
 
 ### Integration test full system
 At this point, Login queries indicate that the whole system is online.
