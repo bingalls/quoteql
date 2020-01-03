@@ -5,7 +5,7 @@ namespace App\Models;
 class Data
 {
     /** @var array<string> */
-    private $data = [];
+    private $data;
 
     /**
      * Data constructor.
@@ -18,23 +18,33 @@ class Data
     }
 
     /**
-     * @param int $index
+     * Group of random quotes, suitable for printing.
+     * @param int $count
      * @return array<string>
      */
-    public function fetch(int $index): array
+    public function fetchPage(int $count): array
     {
-        if (($index < 0) || ($index > count($this->data))) {
+        if (($count < 1) || ($count > count($this->data))) {
             return [];
         }
-
-        return [$this->data[$index]];
+        $result = [];
+        while ($count--) {
+            $result[]= $this->fetchRandom()[0];
+        }
+        return $result;
     }
 
     /**
      * @return array<string>
      */
-    public function fetchAll(): array
+    public function fetchRandom(): array
     {
-        return $this->data;
+        $index = 0;
+        try {
+            $index = random_int(0, count($this->data) - 1);
+        } catch (\Exception $ex) {
+            // TODO log $ex
+        }
+        return [$this->data[$index]];
     }
 }

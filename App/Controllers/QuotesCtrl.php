@@ -16,8 +16,8 @@ class QuotesCtrl implements Cfg
      * @return string
      * Install `jq` to easily format the output
      * @example
-     * curl http://localhost/quotes -X GET -d '{"query":"query{quote(data:0){author year text}}"}' | jq .
-     * curl http://localhost/quotes -X GET -d '{"query":"query{quotes{author year text}}"}' | jq .
+     * curl http://localhost/quotes -X GET -d '{"query":"query{page(data:10){author year text}}"}' | jq .
+     * curl http://localhost/quotes -X GET -d '{"query":"query{random{author year text}}"}' | jq .
      */
     public static function get(array $params = []): string
     {
@@ -35,7 +35,7 @@ class QuotesCtrl implements Cfg
             $queryType = new ObjectType([
                 'name' => 'Query',
                 'fields' => [
-                    'quote' => [
+                    'page' => [
                         'type' => Type::listOf(Type::listOf($msgType)),
                         'args' => [
                             'data' => ['type' => Type::int()],
@@ -44,15 +44,15 @@ class QuotesCtrl implements Cfg
                             /** @noinspection UselessUnsetInspection */
                             unset($unused);
                             $data = new Data(Cfg::DATA);
-                            $quotes = $data->fetch($args['data']);
+                            $quotes = $data->fetchPage($args['data']);
                             return ['quotes' => $quotes];
                         },
                     ],
-                    'quotes' => [
+                    'random' => [
                         'type' => Type::listOf(Type::listOf($msgType)),
                         'resolve' => static function () {
                             $data = new Data(Cfg::DATA);
-                            $quotes = $data->fetchAll();
+                            $quotes = $data->fetchRandom();
                             return ['quotes' => $quotes];
                         },
                     ],

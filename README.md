@@ -96,9 +96,9 @@ At this point, Login queries indicate that the whole system is online.
 If you have optional `jq` installed, it can cleanly format the output.
 Here's the syntax, whether you have curl, wget, or http installed.
 Remember to replace `localhost` with your actual domain
-* `curl http://localhost/quotes -X GET -d '{"query":"query{quotes(data:0){author year text}}"}' | jq .`
-* `wget http://localhost/quotes --method=GET --body-data='{"query":"query{quotes(data:0){author year text}}"}'`
-* `http GET http://localhost/quotes query='{quotes(data:0){author year text}}'`
+* `curl http://localhost/quotes -X GET -d '{"query":"query{page(data:10){author year text}}"}' | jq .`
+* `wget http://localhost/quotes --method=GET --body-data='{"query":"query{page(data:10){author year text}}"}'`
+* `http GET http://localhost/quotes query='{page(data:10){author year text}}'`
 * GraphiQL & GraphQL Playground do not seem to work with GET 
 
 ### Testing Notes
