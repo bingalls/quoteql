@@ -18,20 +18,27 @@ class Data
     }
 
     /**
-     * Group of random quotes, suitable for printing.
+     * Group of unique random quotes, suitable for printing.
      * @param int $count
-     * @return array<string>
+     * @return array<string> Empty for count out of range
      */
     public function fetchPage(int $count): array
     {
         if (($count < 1) || ($count > count($this->data))) {
             return [];
         }
-        $result = [];
+        $results = [];
+        $uniqs = [];
         while ($count--) {
-            $result[]= $this->fetchRandom()[0];
+            $random = $this->fetchRandom()[0];
+            if (in_array($random->id, $uniqs)) {
+                ++$count;
+            } else {
+                $results[] = $random;
+                $uniqs[] = $random->id;
+            }
         }
-        return $result;
+        return $results;
     }
 
     /**

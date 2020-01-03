@@ -1,7 +1,7 @@
 # QuoteQL
 Simple Demo of GraphQL in PHP.
-Rather than translate Latinish Greek of Dead Poets, you can enjoy the living
-daylights of artists & scientists in their native English!
+Enjoy the native English wit of George Bernard Shaw, as well as living artists
+& scientists.
 
 _This demo is written in a hybrid ReST, not GraphQL style!_
 
@@ -99,15 +99,15 @@ Remember to replace `localhost` with your actual domain
 * `curl http://localhost/quotes -X GET -d '{"query":"query{page(data:10){author year text}}"}' | jq .`
 * `wget http://localhost/quotes --method=GET --body-data='{"query":"query{page(data:10){author year text}}"}'`
 * `http GET http://localhost/quotes query='{page(data:10){author year text}}'`
-* GraphiQL & GraphQL Playground do not seem to work with GET 
+* Change controller code from get() to post() to test GraphiQL or GraphQL Playground
 
 ### Testing Notes
 phpmd is not used, as it sadly has not (2019) kept up with changes to PHP.
 Example: `public const SUFFIX = 'Ctrl';` is flagged as a warning in phpmd.
 
 ## Bugs
-**This code is not production ready.** 
-This is a minimal demo of GraphQL in PHP, but with modern practices, such as PSRs.
+This is designed less as production code, but rather a minimal demo of GraphQL in
+PHP, albeit with modern practices, including [PSR](https://www.php-fig.org/)s.
 For production, I recommend [GraphQLite](https://graphqlite.thecodingmachine.io/)
 or, if you use Laravel, [Lighthouse](https://lighthouse-php.com/)
 
@@ -119,7 +119,7 @@ to rewrite this project with [GraphQLite](https://graphqlite.thecodingmachine.io
 I recommend you read [why graphql is not used in public
 ](https://medium.com/@__xuorig__/why-we-dont-see-many-public-graphql-apis-ad972bcb201e)
 
-### Security Holes!
+### Security Holes
 [Overview](https://blog.doyensec.com/2018/05/17/graphql-security-overview.html)
 
 GraphQL offers type-checking & parameter validation. Like GraphQL itself, this project
@@ -127,6 +127,7 @@ does not check if queries are authorized, such as accessing other's data.
 No DoS limits, such as pagination is provided
 
 ## Foot Lights
-I provided 2 quotes, falsely attributed to Ben Franklin.
-The last quote is courtesy of the scientist & playwright 
+Quotes from Shaw are validated, as many popular quotes are unproven.
+I provided 2 quotes, falsely attributed to Ben Franklin, but with known authors.
+The last quote is valid & courtesy of the scientist & playwright 
 [Carlos Jerome](https://www.aroundtheblock.org/)

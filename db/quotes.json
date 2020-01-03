@@ -1,42 +1,52 @@
 {
     "data": [
-        {   "author": "George Bernard Shaw",
+        {   "id": 0,
+            "author": "George Bernard Shaw",
             "year": 1900,
             "text": "Even the youngest of us may be wrong sometimes"
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 1,
+            "author": "George Bernard Shaw",
             "year": 1900,
             "text": "There is no love sincerer than the love of food."
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 2,
+            "author": "George Bernard Shaw",
             "year": 1903,
             "text": "Democracy substitutes election by the incompetent many for appointment by the corrupt few."
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 3,
+            "author": "George Bernard Shaw",
             "year": 1903,
             "text": "Those who understand evil pardon it."
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 4,
+            "author": "George Bernard Shaw",
             "year": 1905,
             "text": "My way of joking is to tell the truth. It's the funniest joke in the world"
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 5,
+            "author": "George Bernard Shaw",
             "year": 1908,
             "text": "The secret of forgiving everything is to understand nothing."
         },
-        {   "author": "George Bernard Shaw",
+        {   "id": 6,
+            "author": "George Bernard Shaw",
             "year": 1910,
             "text": "Why was I born with such contemporaries?"
         },
-        {   "author": "Lionel Ruby",
+        {   "id": 7,
+            "author": "Lionel Ruby",
             "year": 1950,
             "text": "Your argument is sound, nothing but sound"
         },
-        {   "author": "Gary Strand",
+        {   "id": 8,
+            "author": "Gary Strand",
             "year": 1990,
             "text": "A democracy is two wolves and a lamb voting on what to have for lunch."
         },
-        {   "author": "Carlos Jerome",
+        {   "id": 9,
+            "author": "Carlos Jerome",
             "year": 2019,
             "text": "Each one of us is an occurrence of a zero-probability event"
         }
