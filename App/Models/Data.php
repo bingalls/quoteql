@@ -42,7 +42,7 @@ class Data
     }
 
     /**
-     * @return array<string>
+     * @return array<mixed>
      */
     public function fetchRandom(): array
     {
