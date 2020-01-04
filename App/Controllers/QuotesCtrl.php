@@ -19,7 +19,7 @@ class QuotesCtrl implements Cfg
      * curl http://localhost/quotes -X GET -d '{"query":"query{page(data:10){author year text}}"}' | jq .
      * curl http://localhost/quotes -X GET -d '{"query":"query{random{author year text}}"}' | jq .
      */
-    public static function get(array $params = []): string
+    public static function post(array $params = []): string
     {
         $msgType = new ObjectType([
             'name' => 'Quote',

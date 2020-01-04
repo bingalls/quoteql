@@ -1,7 +1,8 @@
 # QuoteQL
 Simple Demo of GraphQL in PHP.
-Enjoy the native English wit of George Bernard Shaw, as well as living artists
-& scientists.
+
+Unix `fortune` cookie API serving the wit of George Bernard Shaw & living
+artists & scientists.
 
 _This demo is written in a hybrid ReST, not GraphQL style!_
 
@@ -11,6 +12,15 @@ Or you can use this to migrate legacy ReST code.
 Includes a lite subset of the 
 [YAF Router](https://www.php.net/manual/en/class.yaf-router.php)
 specification. Unlike YAF, it does not require PECL.
+
+## Quick Start
+Move this to a web directory configured for 
+[valet](https://laravel.com/docs/master/valet)
+or otherwise configured for URL Rewrite (see below). Change `localhost` to
+your actual domain, such as `quoteql.test`.
+
+* linux: `browse http://localhost/show/page/count/4`
+* mac osx: `open http://localhost/show/page/`
 
 ## Requirements
 Tested on MacOSX. Should work on Linux. Not tested on Windows.
@@ -126,7 +136,6 @@ does not check if queries are authorized, such as accessing other's data.
 No DoS limits, such as pagination is provided
 
 ## Foot Lights
-Quotes from Shaw are validated, as many popular quotes are unproven.
-I provided 2 quotes, falsely attributed to Ben Franklin, but with known authors.
-The last quote is valid & courtesy of the scientist & playwright 
-[Carlos Jerome](https://www.aroundtheblock.org/)
+Quotes are [validated](https://www.wikiquote.org/), including quotes not from Ben Franklin.
+Also included is a valid quote, (not yet on Wikiquotes!) courtesy of the scientist
+& playwright [Carlos Jerome](https://www.aroundtheblock.org/)
